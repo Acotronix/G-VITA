@@ -1,0 +1,19 @@
+{
+    "project": "YOGAMAT",
+    "pose_detector": "YOLO11m-Pose",
+    "pose_classifier": "Random Forest",
+    "supported_poses": [
+        "Downdog",
+        "Goddess",
+        "Plank",
+        "Tree",
+        "Warrior2"
+    ],
+    "test_accuracy_percent": 96.79,
+    "external_generalization_tests_completed": 2,
+    "external_generalization_results": {
+        "tests": 2,
+        "correct": 2,
+        "observed_accuracy_percent": 100.0
+    }
+}

@@ -1,0 +1,23 @@
+# Backend-specific ignores
+# (root .gitignore already covers most patterns)
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Node
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Backup files — stale, do not commit
+*.bak

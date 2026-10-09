@@ -1,0 +1,18 @@
+{
+    "pose_classifier_test_accuracy": 0.9678800856531049,
+    "pose_classifier_test_accuracy_percent": 96.79,
+    "supported_poses": [
+        "Downdog",
+        "Goddess",
+        "Plank",
+        "Tree",
+        "Warrior2"
+    ],
+    "form_analyzers": [
+        "Downdog",
+        "Goddess",
+        "Plank",
+        "Tree",
+        "Warrior2"
+    ]
+}

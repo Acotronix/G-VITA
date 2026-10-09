@@ -1,0 +1,150 @@
+# =============================================================
+# VITA / YOGAMAT — root .gitignore
+# Covers: React/Vite frontend, Node/Express backend,
+#         Python FastAPI ML service, Windows, VS Code
+# =============================================================
+
+
+# -------------------------------------------------------------
+# Python
+# -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.env/
+dist/
+build/
+*.so
+
+# Python test / coverage artefacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.prof
+
+# MyPy / pyright
+.mypy_cache/
+.pyright/
+
+
+# -------------------------------------------------------------
+# Node / JavaScript
+# -------------------------------------------------------------
+node_modules/
+
+# Build output
+frontend/dist/
+frontend/dist-ssr/
+backend/dist/
+
+# Yarn / npm / pnpm
+.yarn/
+.pnp.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# -------------------------------------------------------------
+# Environment / secrets  — NEVER commit real env files
+# -------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Keep example templates
+!.env.example
+
+
+# -------------------------------------------------------------
+# Model weights — see README for download instructions
+#
+# yolo11m-pose.pt  (40 MB) — excluded; use Git LFS or download
+#   script. Ultralytics will also auto-download on first run.
+#
+# yogamat_pose_classifier_rf.pkl (4.8 MB) — COMMITTED.
+#   It is the trained project artefact and is small enough for
+#   ordinary Git. Do not add it back to this list.
+# -------------------------------------------------------------
+*.pt
+*.pth
+*.h5
+*.onnx
+*.weights
+*.bin
+*.safetensors
+
+# Uncomment the line below only if you want Git LFS for the RF
+# classifier instead of committing it directly:
+# *.pkl
+
+# Large CSV / binary data
+data/*.csv
+models/*.bin
+
+
+# -------------------------------------------------------------
+# Backup and temporary files
+# -------------------------------------------------------------
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+
+# -------------------------------------------------------------
+# Logs
+# -------------------------------------------------------------
+*.log
+logs/
+
+
+# -------------------------------------------------------------
+# OS
+# -------------------------------------------------------------
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+
+# -------------------------------------------------------------
+# Editor — VS Code
+# Commit .vscode/extensions.json and .vscode/settings.json
+# only if they contain project-wide settings your team needs.
+# -------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.user
+*.ntvs*
+*.njsproj
+*.sln
+
+
+# -------------------------------------------------------------
+# pip cache (only relevant if pip cache lives inside the project)
+# -------------------------------------------------------------
+cache/pip/
+
+
+# -------------------------------------------------------------
+# Pytest / coverage (in case run from root)
+# -------------------------------------------------------------
+.pytest_cache/
