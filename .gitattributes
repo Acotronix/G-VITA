@@ -4,7 +4,6 @@
 # The YOLO weights file (yolo11m-pose.pt, ~40 MB) is tracked via LFS.
 # The Random Forest classifier (yogamat_pose_classifier_rf.pkl, ~4.8 MB)
 # is small enough to commit normally and is NOT tracked by LFS.
-
 *.pt filter=lfs diff=lfs merge=lfs -text
 *.pth filter=lfs diff=lfs merge=lfs -text
 *.h5 filter=lfs diff=lfs merge=lfs -text
